@@ -31,7 +31,7 @@ label,
 a {
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 	color: #fff;
@@ -41,28 +41,67 @@ body {
 	background: #423D51;
 }
 
+section {
+	padding: 25px;
+	height: 100vh;
+	padding-top: 55px;
+}
+
 .container {
 	max-width: 1300px;
 	margin: 0 auto;
-	padding: 0 15px;
+}
+
+.title,
+.hight-title,
+.low-title,
+.middle-title {
+	font-size: 30pt;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.hight-title {
+	font-size: 45pt;
+}
+
+.middle-title {
+	font-size: 35pt;
+}
+
+.legend {
+	font-size: 18pt;
+	font-weight: 200;
+	line-height: 1;
 }
 
 nav {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
 	width: 100%;
 	height: 55px;
 	background: #272A3D;
 	padding: 0 20px;
 }
 
-nav img {
-	height: 35px;
+.nav-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
-nav ul {
+.nav-container img {
+	height: 30px;
+	cursor: pointer;
+	padding: 0 25px;
+}
+
+.nav-container ul {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -73,6 +112,7 @@ nav ul li {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	font-size: 24pt;
 	padding: 5px;
 	border-radius: 5px;
 	transition: all 0.3s ease-in-out;
@@ -84,6 +124,10 @@ nav ul li:hover {
 	border: 1px solid #777;
 }
 
+li a {
+	font-size: 12pt;
+}
+
 li,
 a {
 	list-style: none;
@@ -93,7 +137,6 @@ a {
 .first-section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	height: calc(100vh - 55px);
 	align-items: center;
 }
 
@@ -109,19 +152,16 @@ a {
 	width: 95%;
 }
 
-.about-me-informations h1 {
-	font-size: 25pt;
-	font-weight: bold;
-}
-
 .about-me-informations p {
-	font-size: 14pt;
+	font-size: 16pt;
+	font-weight: 300;
 }
 
 .hire-me {
+	margin-top: 15px;
 	display: flex;
 	padding: 10px;
-	font-weight: bold;
+	font-weight: 400;
 	border-radius: 5px;
 	background: #169895;
 	width: fit-content;
@@ -135,9 +175,146 @@ a {
 .profile-box {
 	width: 100%;
 	align-items: center;
+	justify-content: center;
 }
 
 .profile-image {
-	height: 75%;
-	border: 10px solid #fff;
+	width: 60%;
+	transition: all 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+	width: 65%;
+}
+
+.second-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	background: #211E29;
+}
+
+.skills-box {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.dev-icons-area {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.dev-icon {
+	height: 65px;
+}
+
+.illustration-skills {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.illustration-skills-image {
+	width: 60%;
+}
+
+.third-section {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.experiences-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-gap: 15px;
+	flex: 1;
+}
+
+.experiences-area-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+.experience-button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 40px;
+	max-height: 40px;
+	border-radius: 5px;
+	border: none;
+	background: #272A3D;
+	flex-grow: 1;
+	padding: 0 0 0 10px;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.icon-area-button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	background: #1D2033;
+}
+
+.icon-area-button img {
+	height: 20px;
+}
+
+.experience-button:hover {
+	background: #202233;
+}
+
+.show-experiences {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	height: 100%;
+	gap: 10px;
+}
+
+.experience-title-area,
+.experience-details {
+	display: flex;
+	flex-direction: row;
+	background: #272A3D;
+	border-radius: 5px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.experience-title-area {
+	align-items: center;
+	height: 40px;
+	max-height: 40px;
+	flex-grow: 1;
+}
+
+.experience-details {
+	flex: 1;
+}
+
+
+footer {
+	padding: 0 20px;
+	background: #E2127A;
+	height: 40vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }

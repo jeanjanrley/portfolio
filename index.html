@@ -4,75 +4,140 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
 	<link href="/styles.css" rel="stylesheet">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio - Jean Janrley</title>
 </head>
-<nav>
-	<img alt="Logormarca da empresa Cowimi, Logomarca totalmente branca" src="/assets/Logomarca Cowimi - Branca.png" />
-
-	<ul>
-		<li><a href="">Habilidades</a></li>
-		<li><a href="">projetos</a></li>
-		<li><a href="">Contatos</a></li>
-	</ul>
-</nav>
-<div class="container">
-	<section class="first-section">
-		<div class="about-me-informations">
-			<h1>Jean Janrley</h1>
-			<p>
-				Meu nome é Jean Janrley, sou estudante de Desenvolvimento de sistemas no Senai,
-				estudo programação desde os 12 anos de idade (Atualmente tenho 23) porém resolvi focar na área em 2020,
-				busco me especializar em Javascript e suas tecnologias. Sou apaixonado por aprender e ensinar,
-				estou sempre criando projetos.
-			</p>
-
-			<a class="hire-me" href="">
-				Contrate-me
-			</a>
-		</div>
-
-		<div class="profile-box">
-			<img class="profile-image" alt="Foto de perfil de jean Janrley" src="/assets/jean-foto-de-perfil.png" />
-		</div>
-
-	</section>
-
-	<section>
-		Habilidades
-
-		<div class="skills-box">
-			Tenho vasto conhecimento nas seguintes tecnologias
-			[Logomarcas]
-		</div>
-
-		<div class="illustration-skills">
-			<img alt="Foto de perfil de jean Janrley" src="/assets/illustration-skills.png" />
-		</div>
-	</section>
-
-	<section>
-		Experiências Profissionais
-
-		Centro Médico Ser Mais
-		SICOMERICO
-		Auto Metal
-		Centro Médico Ser Mais
-	</section>
-
-	<section>
-		Minhas Redes Sociais
-		[Logomarcas]
-
-
-		Mais projetos podem ser encontrados em
-		[Logomarca GitHub] @JeanJanrley / github
-	</section>
-</div>
 
 <body>
+	<nav>
+		<div class="nav-container container">
+			<img alt="Logormarca da empresa Cowimi, Logomarca totalmente branca"
+				src="/assets/Logomarca Cowimi - Branca.png" />
+
+			<ul>
+				<li><a href="">Sobre Mim</a></li>
+				<li><a href="">Habilidades</a></li>
+				<li><a href="">projetos</a></li>
+				<li><a href="">Contatos</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<section class="first-section">
+			<div class="about-me-informations">
+				<h1 class="title hight-title">Jean Janrley</h1>
+				<p>
+					Meu nome é Jean Janrley, sou estudante de Desenvolvimento de sistemas no Senai,
+					estudo programação desde os 12 anos de idade (Atualmente tenho 23) porém resolvi focar na área em
+					2020,
+					busco me especializar em Javascript e suas tecnologias. Sou apaixonado por aprender e ensinar,
+					estou sempre criando projetos.
+				</p>
+
+				<a class="hire-me" href="">
+					Contrate-me
+				</a>
+			</div>
+
+			<div class="profile-box">
+				<img class="profile-image" alt="Foto de perfil de jean Janrley" src="/assets/jean-foto-de-perfil.png" />
+			</div>
+
+		</section>
+
+		<section class="second-section">
+
+			<div class="skills-box">
+				<h1 class="title hight-title">Habilidades</h1>
+				<p class="legend">Essas são as principais tecnologias que estou estudando</p>
+				<div class="dev-icons-area">
+					<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="/assets/html-icon.png" />
+					<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="/assets/css-icon.png" />
+					<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="/assets/js-icon.png" />
+					<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="/assets/react-icon.png" />
+					<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="/assets/sass-icon.png" />
+				</div>
+			</div>
+
+			<div class="illustration-skills">
+				<img class="illustration-skills-image" alt="Foto de perfil de jean Janrley"
+					src="/assets/illustration-skills.png" />
+			</div>
+		</section>
+
+		<section class="third-section">
+			<h1 class="title middle-title">Experiências Profissionais</h1>
+
+			<div class="experiences-container">
+
+				<div class="experiences-area-buttons">
+					<button class="experience-button">
+						<span class="text-area-button">
+							Centro Médico Ser Mais
+						</span>
+						<span class="icon-area-button">
+							<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="/assets/arrow-right.svg" />
+						</span>
+					</button>
+					<button class="experience-button">
+						<span class="text-area-button">
+							SICOMERCIO
+						</span>
+						<span class="icon-area-button">
+							<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="/assets/arrow-right.svg" />
+						</span>
+					</button>
+					<button class="experience-button">
+						<span class="text-area-button">
+							Auto Metal
+						</span>
+						<span class="icon-area-button">
+							<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="/assets/arrow-right.svg" />
+						</span>
+					</button>
+					<button class="experience-button">
+						<span class="text-area-button">
+							Centro Médico Ser Mais
+						</span>
+						<span class="icon-area-button">
+							<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="/assets/arrow-right.svg" />
+						</span>
+					</button>
+				</div>
+
+				<div class="show-experiences">
+					<span class="experience-title-area">
+
+					</span>
+
+					<span class="experience-details">
+
+					</span>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<footer>
+		<div class="container-footer">
+			<div class="social-mnedias">
+				Minhas Redes Sociais
+				[Logomarcas]
+			</div>
+
+
+			<div class="github-profile">
+				Mais projetos podem ser encontrados em
+				[Logomarca GitHub] @JeanJanrley / github
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

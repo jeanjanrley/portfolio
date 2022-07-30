@@ -41,7 +41,8 @@ body {
 	background: #423D51;
 }
 
-section {
+section,
+footer {
 	padding: 85px;
 	height: 100vh;
 	max-height: 1080px;
@@ -68,6 +69,10 @@ section {
 
 .middle-title {
 	font-size: 35pt;
+}
+
+.low-title {
+	font-size: 25pt;
 }
 
 .legend {
@@ -135,13 +140,13 @@ a {
 	text-decoration: none;
 }
 
-.first-section {
+#first-section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 }
 
-.first-section div {
+#first-section div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -188,7 +193,7 @@ a {
 	width: 65%;
 }
 
-.second-section {
+#second-section {
 	display: flex;
 	flex-direction: column;
 	background: #211E29;
@@ -232,7 +237,7 @@ a {
 	width: 60%;
 }
 
-.third-section {
+#third-section {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -322,15 +327,17 @@ a {
 footer {
 	width: 100%;
 	background: #E2127A;
+	height: 40vh;
+	max-height: 600px;
 }
 
 
 .container-footer {
 	padding: 0 20px;
-	height: 40vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 10px;
+	height: 100%;
 }
 
 .footer-div {
@@ -338,6 +345,18 @@ footer {
 	flex-direction: column;
 	width: 100%;
 	height: 100%;
-	align-items: center;
 	justify-content: center;
+	gap: 10px;
+}
+
+.dev-icons-media-area {
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	align-items: center;
+}
+
+.dev-icon-media {
+	height: 45px;
+	cursor: pointer;
 }

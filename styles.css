@@ -42,13 +42,14 @@ body {
 }
 
 section {
-	padding: 25px;
+	padding: 85px;
 	height: 100vh;
+	max-height: 1080px;
 	padding-top: 55px;
 }
 
 .container {
-	max-width: 1300px;
+	max-width: 1450px;
 	margin: 0 auto;
 }
 
@@ -83,7 +84,6 @@ nav {
 	width: 100%;
 	height: 55px;
 	background: #272A3D;
-	padding: 0 20px;
 }
 
 .nav-container {
@@ -93,12 +93,13 @@ nav {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	max-width: 1450px;
+	padding: 0 85px;
 }
 
 .nav-container img {
 	height: 30px;
 	cursor: pointer;
-	padding: 0 25px;
 }
 
 .nav-container ul {
@@ -188,10 +189,18 @@ a {
 }
 
 .second-section {
+	display: flex;
+	flex-direction: column;
+	background: #211E29;
+	width: 100%;
+}
+
+.skills-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
-	background: #211E29;
+	height: 100%;
+	width: 100%;
 }
 
 .skills-box {
@@ -310,11 +319,25 @@ a {
 	flex: 1;
 }
 
-
 footer {
-	padding: 0 20px;
+	width: 100%;
 	background: #E2127A;
+}
+
+
+.container-footer {
+	padding: 0 20px;
 	height: 40vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+.footer-div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
 }

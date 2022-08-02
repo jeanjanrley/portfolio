@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 p,
 h1,
 h2,
@@ -46,7 +50,7 @@ footer {
 	padding: 85px;
 	height: 100vh;
 	max-height: 1080px;
-	padding-top: 55px;
+	padding-top: calc(55px + 15px);
 }
 
 .container {
@@ -73,6 +77,10 @@ footer {
 
 .low-title {
 	font-size: 25pt;
+}
+
+.little-title {
+	font-size: 15pt;
 }
 
 .legend {
@@ -243,6 +251,8 @@ a {
 	gap: 20px;
 	width: 100%;
 	text-align: center;
+	padding-top: 85px;
+	padding-bottom: 85px;
 }
 
 .experiences-container {
@@ -349,6 +359,10 @@ footer {
 	gap: 10px;
 }
 
+.footer-div h1 {
+	line-height: 1.1;
+}
+
 .dev-icons-media-area {
 	display: flex;
 	flex-direction: row;
@@ -359,4 +373,70 @@ footer {
 .dev-icon-media {
 	height: 45px;
 	cursor: pointer;
+}
+
+.github-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5px;
+}
+
+.github-section img {
+	height: 35px;
+}
+
+.github-section p {
+	font-weight: 300;
+	font-size: 16pt;
+}
+
+.github-name {
+	color: #0ACBBF;
+}
+
+@media(max-width: 1034px) {
+
+	.nav-container,
+	section,
+	footer {
+		padding: 0 35px;
+	}
+
+	.hight-title {
+		font-size: 35pt;
+	}
+
+	.middle-title {
+		font-size: 25pt;
+	}
+
+	.low-title {
+		font-size: 18pt;
+	}
+
+	.little-title {
+		font-size: 16pt;
+	}
+
+	.about-me-informations p {
+		font-size: 14pt;
+		font-weight: 300;
+	}
+
+	.profile-image,
+	.illustration-skills-image {
+		width: 80%;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.experiences-container {
+		grid-template-columns: 2fr 3fr;
+	}
+}
+
+@media(max-width: 780px) {
+	.nav-container ul {
+		display: none;
+	}
 }

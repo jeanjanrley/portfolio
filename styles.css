@@ -448,12 +448,10 @@ footer {
 }
 
 @media(max-width: 780px) {
-	.hight-title {
-		font-size: 25pt;
-	}
 
+	.hight-title,
 	.middle-title {
-		font-size: 15pt;
+		font-size: 25pt;
 	}
 
 	.low-title {

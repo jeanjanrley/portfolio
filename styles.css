@@ -41,10 +41,6 @@ a {
 	color: #fff;
 }
 
-img {
-	background-color: #777;
-}
-
 .menu-area {
 	display: none;
 }
@@ -498,12 +494,12 @@ footer {
 		flex-direction: column;
 		margin-top: calc(55px);
 		padding: 0;
+		height: max-content;
 	}
 
 	.profile-box {
 		background: #1f2231;
-		min-height: 25%;
-		max-height: 25%;
+		height: 25vh;
 	}
 
 	.profile-image {
@@ -520,9 +516,8 @@ footer {
 
 	.about-me-informations {
 		align-items: center;
-		height: max-content;
 		width: 100%;
-		padding: calc(10px + 175px) 20px;
+		padding: 175px 20px 20px 20px;
 	}
 
 	.about-me-informations p {
@@ -535,5 +530,21 @@ footer {
 		width: 100%;
 		justify-content: center;
 		font-size: 14pt;
+	}
+
+
+	.skills-container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		gap: 15px;
+	}
+
+	.skills-box {
+		width: 100%;
+		padding: 20px;
+		align-items: center;
+		text-align: center;
 	}
 }

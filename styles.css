@@ -489,8 +489,8 @@ footer {
 	}
 
 	#first-section {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 3fr;
+		display: flex;
+		flex-direction: column;
 		margin-top: calc(55px);
 		padding: 0;
 	}
@@ -503,7 +503,7 @@ footer {
 
 	.profile-box {
 		background: #1f2231;
-		padding: 10px;
+		max-height: 25%;
 	}
 
 	.profile-image {
@@ -519,15 +519,17 @@ footer {
 	}
 
 	.about-me-informations {
-		padding: 15px;
-		text-align: center;
 		display: flex;
-		margin-top: 30px;
-		min-height: max-content;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		height: fit-content;
+		width: 100%;
+		padding: 0 20px;
 	}
 
 	.about-me-informations p {
-		font-size: 11pt;
+		font-size: 12pt;
 		font-weight: 300;
 		text-align: justify;
 	}

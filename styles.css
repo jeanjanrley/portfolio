@@ -41,6 +41,10 @@ a {
 	color: #fff;
 }
 
+img {
+	background-color: #777;
+}
+
 .menu-area {
 	display: none;
 }

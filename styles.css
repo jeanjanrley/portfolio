@@ -489,6 +489,8 @@ footer {
 		background: #191b27;
 	}
 
+
+
 	#first-section {
 		display: flex;
 		flex-direction: column;
@@ -532,6 +534,9 @@ footer {
 		font-size: 14pt;
 	}
 
+	#second-section {
+		height: max-content;
+	}
 
 	.skills-container {
 		display: flex;
@@ -546,5 +551,46 @@ footer {
 		padding: 20px;
 		align-items: center;
 		text-align: center;
+	}
+
+	.dev-icons-area {
+		width: 100%;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	#third-section {
+		height: max-content;
+	}
+
+	.experiences-container {
+		display: flex;
+		flex-direction: column-reverse;
+		height: 100%;
+		width: 100%;
+		gap: 15px;
+		padding: 20px;
+	}
+
+	.show-experiences {
+		min-height: 65vh;
+	}
+
+	footer {
+		height: max-content;
+	}
+
+	.container-footer {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.footer-div {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 100%;
+		padding: 20px;
 	}
 }

@@ -41,6 +41,10 @@ a {
 	color: #fff;
 }
 
+.menu-area {
+	display: none;
+}
+
 body {
 	background: #423D51;
 }
@@ -187,6 +191,13 @@ a {
 }
 
 .profile-box {
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.profile-box picture {
+	display: flex;
 	width: 100%;
 	align-items: center;
 	justify-content: center;
@@ -436,7 +447,66 @@ footer {
 }
 
 @media(max-width: 780px) {
+	section {
+		padding: 0;
+	}
+
 	.nav-container ul {
 		display: none;
+	}
+
+	.menu-area {
+		display: flex;
+		cursor: pointer;
+		padding: 7px;
+		border-radius: 5px;
+	}
+
+	.menu-area:hover {
+		background: #191b27;
+	}
+
+	#first-section {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding-top: calc(55px);
+		background: #181a27;
+	}
+
+	.profile-box {
+		background: #1f2231;
+		padding: 50px;
+	}
+
+	.profile-image {
+		width: 50%;
+		max-width: 360px;
+		border-radius: 50%;
+		border: 5px solid #fafafa;
+		margin-bottom: -100px;
+	}
+
+	.profile-image:hover {
+		width: 40%;
+		max-width: 360px;
+	}
+
+	.about-me-informations {
+		padding: 60px 15px;
+		text-align: center;
+		display: flex;
+	}
+
+	.about-me-informations p {
+		font-size: 11pt;
+		font-weight: 300;
+		text-align: justify;
+	}
+
+	.hire-me {
+		width: 100%;
+	justify-content: center;
+		font-size: 14pt;
 	}
 }

@@ -447,8 +447,29 @@ footer {
 }
 
 @media(max-width: 780px) {
+	.hight-title {
+		font-size: 25pt;
+	}
+
+	.middle-title {
+		font-size: 15pt;
+	}
+
+	.low-title {
+		font-size: 14pt;
+	}
+
+	.little-title {
+		font-size: 12pt;
+	}
+
 	section {
-		padding: 0;
+		padding: 20px 0;
+		min-height: max-content;
+	}
+
+	.nav-container {
+		padding: 0 20px;
 	}
 
 	.nav-container ul {
@@ -460,6 +481,7 @@ footer {
 		cursor: pointer;
 		padding: 7px;
 		border-radius: 5px;
+		margin-right: -14px;
 	}
 
 	.menu-area:hover {
@@ -467,35 +489,41 @@ footer {
 	}
 
 	#first-section {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 3fr;
+		margin-top: calc(55px);
+		padding: 0;
+	}
+
+	.profile-box,
+	.about-me-informations {
 		display: flex;
-		flex-direction: column;
-		gap: 10px;
-		padding-top: calc(55px);
-		background: #181a27;
+		flex: 1;
 	}
 
 	.profile-box {
 		background: #1f2231;
-		padding: 50px;
+		padding: 10px;
 	}
 
 	.profile-image {
 		width: 50%;
-		max-width: 360px;
 		border-radius: 50%;
 		border: 5px solid #fafafa;
-		margin-bottom: -100px;
+		margin-bottom: -30%;
 	}
 
 	.profile-image:hover {
-		width: 40%;
+		width: 50%;
 		max-width: 360px;
 	}
 
 	.about-me-informations {
-		padding: 60px 15px;
+		padding: 15px;
 		text-align: center;
 		display: flex;
+		margin-top: 30px;
+		min-height: max-content;
 	}
 
 	.about-me-informations p {
@@ -506,7 +534,7 @@ footer {
 
 	.hire-me {
 		width: 100%;
-	justify-content: center;
+		justify-content: center;
 		font-size: 14pt;
 	}
 }

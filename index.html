@@ -13,149 +13,148 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio - Jean Janrley</title>
 </head>
-
-<body>
-	<nav>
-		<div class="nav-container container">
+<nav id="nav-box">
+	<div class="nav-container container" id="nav-container">
+		<div id="logo-and-menu">
 			<img alt="Logormarca da empresa Cowimi, Logomarca totalmente branca"
 				src="assets/Logomarca Cowimi - Branca.png" />
-
-			<ul>
-				<li><a href="#first-section">Sobre Mim</a></li>
-				<li><a href="#second-section">Habilidades</a></li>
-				<li><a href="#third-section">Experiências Profissionais</a></li>
-				<li><a href="#footer-section">Contatos</a></li>
-			</ul>
-			<div class="menu-area">
-				<img src="assets/menu.svg" alt="Icone de menu para dispositivos moveis">
+			<div class="menu-area" id="menu-area">
+				<img src="assets/menu.svg" id="menu-icon" alt="Icone de menu para dispositivos moveis">
 			</div>
 		</div>
-	</nav>
-	<div class="container">
-		<section id="first-section">
-			<div class="profile-box">
-				<picture>
-					<source media="(max-width:780px)" srcset="assets/jean-foto-de-perfil-sem-edicao.jpg">
-					<img class="profile-image" alt="Foto de perfil de jean Janrley"
-						src="assets/jean-foto-de-perfil.png" />
-				</picture>
+		<ul id="menu-options">
+			<li><a href="#first-section">Sobre Mim</a></li>
+			<li><a href="#second-section">Habilidades</a></li>
+			<li><a href="#third-section">Experiências Profissionais</a></li>
+			<li><a href="#footer-section">Contatos</a></li>
+		</ul>
+	</div>
+</nav>
+<div class="container">
+	<section id="first-section">
+		<div class="profile-box">
+			<picture>
+				<source media="(max-width:780px)" srcset="assets/jean-foto-de-perfil-sem-edicao.jpg">
+				<img class="profile-image" alt="Foto de perfil de jean Janrley" src="assets/jean-foto-de-perfil.png" />
+			</picture>
+		</div>
+
+		<div class="about-me-informations">
+			<h1 class="title hight-title">Jean Janrley</h1>
+			<p>
+				Meu nome é Jean Janrley, tenho 23 anos e sou apaixonado por programação desde os 12.<br />
+				Atualmente estudo Tec. em desenvolvimento de sistemas no Senai (06/2022 - 12/2023) e estou me
+				especializando em Javascript e suas tecnologias
+			</p>
+
+			<a class="hire-me" href="">
+				Contrate-me
+			</a>
+		</div>
+	</section>
+
+	<section id="second-section">
+		<div class="skills-container">
+			<div class="skills-box">
+				<h1 class="title hight-title">Habilidades</h1>
+				<p class="legend">Essas são as principais tecnologias que estou estudando</p>
+				<div class="dev-icons-area">
+					<img alt="Icone do HTML" class="dev-icon" src="assets/html-icon.png" />
+					<img alt="Icone do Css" class="dev-icon" src="assets/css-icon.png" />
+					<img alt="Icone do Javascript" class="dev-icon" src="assets/js-icon.png" />
+					<img alt="Icone do React" class="dev-icon" src="assets/react-icon.png" />
+					<img alt="Icone do Sass" class="dev-icon" src="assets/sass-icon.png" />
+				</div>
 			</div>
 
-			<div class="about-me-informations">
-				<h1 class="title hight-title">Jean Janrley</h1>
-				<p>
-					Meu nome é Jean Janrley, tenho 23 anos e sou apaixonado por programação desde os 12.<br />
-					Atualmente estudo Tec. em desenvolvimento de sistemas no Senai (06/2022 - 12/2023) e estou me
-					especializando em Javascript e suas tecnologias
-				</p>
-
-				<a class="hire-me" href="">
-					Contrate-me
-				</a>
+			<div class="illustration-skills">
+				<img class="illustration-skills-image" alt="Foto de perfil de jean Janrley"
+					src="assets/illustration-skills.png" />
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="second-section">
-			<div class="skills-container">
-				<div class="skills-box">
-					<h1 class="title hight-title">Habilidades</h1>
-					<p class="legend">Essas são as principais tecnologias que estou estudando</p>
-					<div class="dev-icons-area">
-						<img alt="Icone do HTML" class="dev-icon" src="assets/html-icon.png" />
-						<img alt="Icone do Css" class="dev-icon" src="assets/css-icon.png" />
-						<img alt="Icone do Javascript" class="dev-icon" src="assets/js-icon.png" />
-						<img alt="Icone do React" class="dev-icon" src="assets/react-icon.png" />
-						<img alt="Icone do Sass" class="dev-icon" src="assets/sass-icon.png" />
-					</div>
-				</div>
-
-				<div class="illustration-skills">
-					<img class="illustration-skills-image" alt="Foto de perfil de jean Janrley"
-						src="assets/illustration-skills.png" />
-				</div>
-			</div>
-		</section>
-
-		<section id="third-section">
-			<h1 class="title middle-title">Experiências Profissionais</h1>
-			<div class="experiences-container">
-				<div class="experiences-area-buttons">
-					<button class="experience-button">
-						<span class="text-area-button">
-							Centro Médico Ser Mais
-						</span>
-						<span class="icon-area-button">
-							<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
-						</span>
-					</button>
-					<button class="experience-button">
-						<span class="text-area-button">
-							SICOMERCIO
-						</span>
-						<span class="icon-area-button">
-							<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
-						</span>
-					</button>
-					<button class="experience-button">
-						<span class="text-area-button">
-							Auto Metal
-						</span>
-						<span class="icon-area-button">
-							<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
-						</span>
-					</button>
-					<button class="experience-button">
-						<span class="text-area-button">
-							Centro Médico Ser Mais
-						</span>
-						<span class="icon-area-button">
-							<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
-						</span>
-					</button>
-				</div>
-
-				<div class="show-experiences">
-					<span class="experience-title-area">
-
+	<section id="third-section">
+		<h1 class="title middle-title">Experiências Profissionais</h1>
+		<div class="experiences-container">
+			<div class="experiences-area-buttons">
+				<button class="experience-button">
+					<span class="text-area-button">
+						Centro Médico Ser Mais
 					</span>
-
-					<span class="experience-details">
-
+					<span class="icon-area-button">
+						<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
 					</span>
-				</div>
+				</button>
+				<button class="experience-button">
+					<span class="text-area-button">
+						SICOMERCIO
+					</span>
+					<span class="icon-area-button">
+						<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
+					</span>
+				</button>
+				<button class="experience-button">
+					<span class="text-area-button">
+						Auto Metal
+					</span>
+					<span class="icon-area-button">
+						<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
+					</span>
+				</button>
+				<button class="experience-button">
+					<span class="text-area-button">
+						Centro Médico Ser Mais
+					</span>
+					<span class="icon-area-button">
+						<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
+					</span>
+				</button>
 			</div>
-		</section>
-		<footer id="footer-section">
-			<div class="container container-footer">
-				<div class="footer-div social-medias">
-					<h1 class="title low-title">Minhas Redes Sociais</h1>
-					<div class="dev-icons-media-area">
-						<a href="https://www.linkedin.com/in/jean-janrley-1b7220156/" target="_blank">
-							<img alt="Icone do linkedin" class="dev-icon-media" src="assets/linkedin-icon.svg" />
-						</a>
 
-						<a href="https://api.whatsapp.com/send?phone=5571999410178&text=Ol%C3%A1%20Jean!%20Vim%20Atrav%C3%A9s%20do%20seu%20portf%C3%B3lio."
-							target="_blank">
-							<img alt="Icone do Whastapp" class="dev-icon-media" src="assets/whatsapp-icone.svg" />
-						</a>
+			<div class="show-experiences">
+				<span class="experience-title-area">
 
-						<a href="mailto:jeanjanrley@outlook.com" target="_blank">
-							<img alt="Icone do Gmail" class="dev-icon-media" src="assets/gmail-icon.svg" />
-						</a>
-					</div>
-				</div>
+				</span>
 
+				<span class="experience-details">
 
-				<div class="footer-div github-profile">
-					<h1 class="title low-title">Mais projetos podem ser encontrados em</h1>
-					<a class="github-section" href="https://github.com/jeanjanrley" target="_blank">
-						<img alt="Icone do Css" class="dev-icon-media" src="assets/github-icon.png" />
-						<p class="title little-title">@<span class="github-name">JeanJanrley</span> / github</p>
+				</span>
+			</div>
+		</div>
+	</section>
+	<footer id="footer-section">
+		<div class="container container-footer">
+			<div class="footer-div social-medias">
+				<h1 class="title low-title">Minhas Redes Sociais</h1>
+				<div class="dev-icons-media-area">
+					<a href="https://www.linkedin.com/in/jean-janrley-1b7220156/" target="_blank">
+						<img alt="Icone do linkedin" class="dev-icon-media" src="assets/linkedin-icon.svg" />
+					</a>
+
+					<a href="https://api.whatsapp.com/send?phone=5571999410178&text=Ol%C3%A1%20Jean!%20Vim%20Atrav%C3%A9s%20do%20seu%20portf%C3%B3lio."
+						target="_blank">
+						<img alt="Icone do Whastapp" class="dev-icon-media" src="assets/whatsapp-icone.svg" />
+					</a>
+
+					<a href="mailto:jeanjanrley@outlook.com" target="_blank">
+						<img alt="Icone do Gmail" class="dev-icon-media" src="assets/gmail-icon.svg" />
 					</a>
 				</div>
 			</div>
-		</footer>
-	</div>
+
+
+			<div class="footer-div github-profile">
+				<h1 class="title low-title">Mais projetos podem ser encontrados em</h1>
+				<a class="github-section" href="https://github.com/jeanjanrley" target="_blank">
+					<img alt="Icone do Css" class="dev-icon-media" src="assets/github-icon.png" />
+					<p class="title little-title">@<span class="github-name">JeanJanrley</span> / github</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="config.js"></script>
 </body>
 
 </html>

@@ -114,7 +114,14 @@ nav {
 	padding: 0 85px;
 }
 
-.nav-container img {
+#logo-and-menu {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#logo-and-menu img {
 	height: 30px;
 	cursor: pointer;
 }

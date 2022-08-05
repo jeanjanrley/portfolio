@@ -94,7 +94,7 @@ const experienciasProfissionais = [
 		descricao: `
 			Realizando atividades de suporte administrativo, social
 			media, cobranças, pagamentos,
-			manutenção de rede e micro
+			manutenção de rede e micro.
 		`,
 		atual: false,
 	},
@@ -106,9 +106,9 @@ const experienciasProfissionais = [
 		inicio: "06-2019",
 		fim: "10-2020",
 		descricao: `
-			Área de expedição, responsável pelo inventario diário de peças, requisição de materiais
+			Área de expedição, responsável pelo inventário diário de peças, requisição de materiais
 			diversos ao almoxarifado, criação de embarques e despacho de peças, fiscalização de qualidade
-			e retrabalho de peças, organização e controle de embalagens
+			e retrabalho de peças, organização e controle de embalagens.
 		`,
 		atual: false,
 	},

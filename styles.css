@@ -489,6 +489,7 @@ footer {
 	.experiences-container {
 		grid-template-columns: 1fr 1fr;
 		flex: none;
+		min-height: 30vh;
 	}
 }
 

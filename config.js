@@ -8,6 +8,11 @@ const menuIcon = document.getElementById("menu-icon");
 
 const closeButton = document.getElementById("close-button");
 
+const experienceTitle = document.getElementById("experience-title");
+const experienceDescription = document.getElementById("experience-description");
+const experienceTime = document.getElementById("experience-time");
+const experienceButtons = document.getElementsByClassName("experience-button");
+
 const navExpandedStyle = `
 	position: fixed;
 	top: 0;
@@ -61,3 +66,78 @@ menu.addEventListener("click", () => {
 	menuExpandedState ? closeMenu() : expandMenu();
 	menuExpandedState = !menuExpandedState;
 });
+
+const experienciasProfissionais = [
+	{
+		empresa: "Centro Médico Ser Mais",
+		cargo: "Auxiliar Administrativo",
+		tipo: "Estágio",
+		local: "Camaçari - BA",
+		inicio: "06-2017",
+		fim: "12-2017",
+		descricao: `
+			Responsável pelo suporte administrativo, atendimento
+			ao cliente, marcação de exames e
+			principalmente na manutenção de rede e micro da empresa. Como estagiário fiz a
+			configuração de rede e servidores necessária para o compartilhamento de arquivos entre o
+			servidor e as estações.
+		`,
+		atual: false,
+	},
+	{
+		empresa: "Sicomercio Camaçari",
+		cargo: "Auxiliar Administrativo",
+		tipo: "CLT",
+		local: "Camaçari - BA",
+		inicio: "01-2018",
+		fim: "10-2018",
+		descricao: `
+			Realizando atividades de suporte administrativo, social
+			media, cobranças, pagamentos,
+			manutenção de rede e micro
+		`,
+		atual: false,
+	},
+	{
+		empresa: "Auto Metal SA",
+		cargo: "Auxiliar Administrativo",
+		tipo: "Jovem Aprendiz",
+		local: "Dias D'ávila - BA",
+		inicio: "06-2019",
+		fim: "10-2020",
+		descricao: `
+			Área de expedição, responsável pelo inventario diário de peças, requisição de materiais
+			diversos ao almoxarifado, criação de embarques e despacho de peças, fiscalização de qualidade
+			e retrabalho de peças, organização e controle de embalagens
+		`,
+		atual: false,
+	},
+	{
+		empresa: "Centro Médico Ser Mais",
+		cargo: "Técnico de TI",
+		tipo: "CLT",
+		local: "Camaçari - BA",
+		inicio: "04-2021",
+		fim: "06-2022",
+		descricao: `
+			Responsável pelo gerenciamento de rede da empresa, criação de usuários de rede,
+			gerenciamento de servidor de domínio, políticas de grupo,
+			gerenciamento de regras no servidor de arquivos, configuração de firewall,
+			configuração de roteadores, impressoras, periféricos em geral e etc.
+		`,
+		atual: false,
+	},
+]
+
+
+function changeExperience(index) {
+	for (let i = 0; i < experienceButtons.length; i++) {
+		experienceButtons[i].removeAttribute("style");
+	}
+
+	experienceTitle.innerHTML = experienciasProfissionais[index].empresa;
+	experienceDescription.innerHTML = experienciasProfissionais[index].descricao;
+	experienceTime.innerHTML = `${experienciasProfissionais[index].inicio} / ${experienciasProfissionais[index].fim}`;
+	experienceButtons[index].style.background = "#1a1c2b";
+
+}

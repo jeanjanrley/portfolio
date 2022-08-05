@@ -141,3 +141,8 @@ function changeExperience(index) {
 	experienceButtons[index].style.background = "#1a1c2b";
 
 }
+
+function copyText(text) {
+	navigator.clipboard.writeText(text);
+	window.alert("Copiado para a área de transferência!");
+}

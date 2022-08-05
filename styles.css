@@ -210,7 +210,7 @@ a {
 }
 
 .hire-me:hover {
-	background: #118684;
+	background: #278b42;
 }
 
 .profile-box {
@@ -393,30 +393,87 @@ a {
 footer {
 	width: 100%;
 	background: #E2127A;
-	height: 40vh;
-	max-height: 600px;
+	height: 50vh;
 }
 
 
 .container-footer {
-	padding: 0 20px;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	gap: 10px;
 	height: 100%;
+}
+
+.contacts-area {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 0;
+}
+
+.contacts-buttons-area {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	gap: 10px;
+	padding: 0 20px 0 0;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 40px;
+	border-radius: 7px;
+	overflow: hidden;
+	color: #fff;
+	cursor: pointer;
+	background: #1D2033;
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+}
+
+.contact-box:hover {
+	background: #151725;
+}
+
+.contact-icon {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	height: 100%;
+	width: 40px;
+}
+
+.contact-box img {
+	height: 20px;
+}
+
+.contact-text {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 10px;
+	font-size: 11pt;
+	font-weight: 400;
 }
 
 .footer-div {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	width: 100%;
 	height: 100%;
-	justify-content: center;
 	gap: 10px;
 }
 
 .footer-div h1 {
 	line-height: 1.1;
+	text-align: center;
 }
 
 .dev-icons-media-area {
@@ -625,6 +682,7 @@ footer {
 
 	footer {
 		height: max-content;
+		padding: 0;
 	}
 
 	.container-footer {
@@ -639,5 +697,9 @@ footer {
 		text-align: center;
 		width: 100%;
 		padding: 20px;
+	}
+
+	.contacts-buttons-area {
+		padding: 0;
 	}
 }

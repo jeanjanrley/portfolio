@@ -116,7 +116,8 @@ nav {
 
 #logo-and-menu {
 	display: flex;
-	flex: 1;
+	width: 100%;
+	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -138,7 +139,6 @@ nav ul li {
 	flex-direction: row;
 	align-items: center;
 	font-size: 24pt;
-	padding: 5px;
 	border-radius: 5px;
 	transition: all 0.3s ease-in-out;
 	cursor: pointer;
@@ -150,7 +150,13 @@ nav ul li:hover {
 }
 
 li a {
+	padding: 10px;
 	font-size: 12pt;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	white-space: nowrap;
 }
 
 li,
@@ -480,6 +486,13 @@ footer {
 
 	.nav-container ul {
 		display: none;
+		width: 100%;
+	}
+
+	.nav-container ul li {
+		width: 100%;
+		background: #303449;
+		justify-content: center;
 	}
 
 	.menu-area {

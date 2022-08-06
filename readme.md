@@ -1,5 +1,5 @@
 <h1> 🚀 Seja bem vindo ao meu portfólio pessoal!</h1>
-<p>Este prjeto foi construído com HTML 5, CSS 3 e Javascript</p>
+<p>Este projeto foi construído com HTML 5, CSS 3 e Javascript</p>
 
 <img src="asstes/../assets/thumbnail.jpg">
 

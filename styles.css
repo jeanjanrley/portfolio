@@ -170,6 +170,7 @@ a {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
+	background: #211E29;
 }
 
 .about-me-informations,
@@ -287,6 +288,7 @@ a {
 	width: 100%;
 	text-align: center;
 	padding: 30px 85px;
+	background: #423D51;
 }
 
 .experiencias {

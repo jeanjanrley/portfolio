@@ -186,7 +186,7 @@ a {
 }
 
 .about-me-informations p {
-	font-size: 16pt;
+	font-size: 14pt;
 	font-weight: 300;
 }
 
@@ -227,7 +227,7 @@ a {
 }
 
 .profile-image {
-	width: 60%;
+	width: 75%;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -276,7 +276,7 @@ a {
 }
 
 .illustration-skills-image {
-	width: 60%;
+	width: 70%;
 }
 
 #third-section {

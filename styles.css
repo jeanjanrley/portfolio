@@ -47,7 +47,7 @@ a {
 }
 
 body {
-	background: #423D51;
+	background: #211E29;
 }
 
 section,
@@ -170,7 +170,6 @@ a {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
-	background: #211E29;
 }
 
 .about-me-informations,
@@ -240,7 +239,6 @@ a {
 #second-section {
 	display: flex;
 	flex-direction: column;
-	background: #211E29;
 	width: 100%;
 }
 
@@ -288,7 +286,7 @@ a {
 	width: 100%;
 	text-align: center;
 	padding: 30px 85px;
-	background: #423D51;
+	background: #191722;
 }
 
 .experiencias {

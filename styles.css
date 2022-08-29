@@ -188,6 +188,7 @@ a {
 .about-me-informations p {
 	font-size: 14pt;
 	font-weight: 300;
+	text-align: justify;
 }
 
 .hire-me {

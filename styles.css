@@ -318,6 +318,10 @@ a {
 	background: #1D2033;
 }
 
+.icon-area-button img {
+	height: 20px;
+}
+
 .experience-button:hover {
 	background: #202233;
 }
@@ -358,9 +362,14 @@ a {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	padding: 25px;
+	padding: 15px;
 	gap: 10px;
 	justify-content: space-between;
+	min-height: 250px;
+}
+
+#experience-description {
+	font-weight: 400;
 }
 
 #experience-time {

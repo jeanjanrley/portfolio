@@ -1,75 +1,51 @@
 @charset "UTF-8";
 /* CSS Document */
 
+:root {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 500;
+
+	color-scheme: light dark;
+	color: #ffffff;
+	background-color: #211E29;
+	background: #211E29;
+	scroll-behavior: smooth;
+
+	font-weight: 500;
+	letter-spacing: 1px;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-form,
-fieldset,
-legend,
-input,
-textarea,
-button,
-select,
-label,
-span,
-a {
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-	color: #fff;
-}
-
 .menu-area {
 	display: none;
 }
 
-body {
-	background: #211E29;
-}
-
 section,
 footer {
-	padding: 85px;
-	height: 100vh;
-	max-height: 1080px;
-	padding-top: calc(55px + 15px);
+	width: 100%;
 }
 
 .container {
-	max-width: 1450px;
+	width: 100%;
+	max-width: 1080px;
 	margin: 0 auto;
 }
 
-.title,
-.hight-title,
-.low-title,
-.middle-title {
+.title {
 	font-size: 30pt;
-	font-weight: 500;
-	letter-spacing: 1px;
 }
 
 .hight-title {
@@ -89,7 +65,7 @@ footer {
 }
 
 .legend {
-	font-size: 18pt;
+	font-size: 16pt;
 	font-weight: 200;
 	line-height: 1;
 }
@@ -111,7 +87,7 @@ nav {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	max-width: 1450px;
+	max-width: 1080px;
 	padding: 0 85px;
 }
 
@@ -167,6 +143,11 @@ a {
 }
 
 #first-section {
+	margin-top: calc(55px);
+	padding: 50px 0;
+}
+
+#first-section .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
@@ -204,6 +185,7 @@ a {
 	width: fit-content;
 	transition: all 0.3s ease-in-out;
 	height: 40px;
+	color: #fff;
 }
 
 .hire-me img {
@@ -237,23 +219,25 @@ a {
 }
 
 #second-section {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
+	background: #2e2a3d;
 }
 
-.skills-container {
+#second-section .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	height: 100%;
 	width: 100%;
+	padding: 30px 0;
 }
 
 .skills-box {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
+	align-items: center;
 	gap: 20px;
+	width: 100%;
 }
 
 .dev-icons-area {
@@ -264,7 +248,7 @@ a {
 }
 
 .dev-icon {
-	height: 65px;
+	height: 20px;
 }
 
 .illustration-skills {
@@ -280,17 +264,16 @@ a {
 }
 
 #third-section {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	width: 100%;
-	text-align: center;
-	padding: 30px 85px;
 	background: #191722;
 }
 
-.experiencias {
-	margin-top: calc(55px + 15px);
+#third-section .container {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
 }
 
 .experiences-container {
@@ -333,10 +316,6 @@ a {
 	height: 40px;
 	width: 40px;
 	background: #1D2033;
-}
-
-.icon-area-button img {
-	height: 20px;
 }
 
 .experience-button:hover {
@@ -392,17 +371,15 @@ a {
 }
 
 footer {
-	width: 100%;
 	background: #E2127A;
-	height: 50vh;
 }
 
-
-.container-footer {
+footer .container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 10px;
-	height: 100%;
+	padding-bottom: 30px;
+	padding-top: 30px;
 }
 
 .contacts-area {
@@ -489,7 +466,7 @@ footer {
 	cursor: pointer;
 }
 
-.github-section {
+.github-section .container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -510,12 +487,6 @@ footer {
 }
 
 @media(max-width: 1034px) {
-
-	.nav-container,
-	section,
-	footer {
-		padding: 0 35px;
-	}
 
 	.hight-title {
 		font-size: 35pt;
@@ -567,12 +538,11 @@ footer {
 	}
 
 	section {
-		padding: 20px 0;
 		min-height: max-content;
 	}
 
 	.nav-container {
-		padding: 0 20px;
+		padding: 0 12px;
 	}
 
 	.nav-container ul {
@@ -591,25 +561,20 @@ footer {
 		cursor: pointer;
 		padding: 7px;
 		border-radius: 5px;
-		margin-right: -14px;
+		margin-right: -7px;
 	}
 
 	.menu-area:hover {
 		background: #191b27;
 	}
 
-
-
-	#first-section {
+	#first-section .container {
 		display: flex;
 		flex-direction: column;
-		margin-top: calc(55px);
-		padding: 0;
 		height: max-content;
 	}
 
 	.profile-box {
-		background: #1f2231;
 		height: 25vh;
 	}
 
@@ -628,7 +593,7 @@ footer {
 	.about-me-informations {
 		align-items: center;
 		width: 100%;
-		padding: 175px 20px 20px 20px;
+		padding: 175px 12px 20px 12px;
 	}
 
 	.about-me-informations p {
@@ -643,11 +608,8 @@ footer {
 		font-size: 14pt;
 	}
 
-	#second-section {
+	#second-section .container {
 		height: max-content;
-	}
-
-	.skills-container {
 		display: flex;
 		flex-direction: column;
 		height: 100%;
@@ -657,9 +619,7 @@ footer {
 
 	.skills-box {
 		width: 100%;
-		padding: 20px;
-		align-items: center;
-		text-align: center;
+		padding: 12px;
 	}
 
 	.dev-icons-area {
@@ -668,25 +628,23 @@ footer {
 		flex-wrap: wrap;
 	}
 
-	#third-section {
+	.dev-icon {
+		height: 20px;
+	}
+
+	#third-section .container {
 		height: max-content;
-		min-height: 100vh;
-		padding: 0 0 20px 0;
 	}
 
 	.experiences-container {
 		display: flex;
 		flex-direction: column-reverse;
 		gap: 15px;
-		padding: 0 20px;
+		padding: 0 12px;
 	}
 
-	footer {
-		height: max-content;
-		padding: 0;
-	}
+	footer .container {
 
-	.container-footer {
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
@@ -697,7 +655,7 @@ footer {
 		justify-content: center;
 		text-align: center;
 		width: 100%;
-		padding: 20px;
+		padding: 12px;
 	}
 
 	.contacts-buttons-area {

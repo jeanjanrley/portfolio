@@ -45,24 +45,22 @@
 		</ul>
 	</div>
 </nav>
-<div class="container">
-	<section id="first-section">
+<section id="first-section">
+	<div class="container">
 		<div class="profile-box">
 			<picture>
 				<source media="(max-width:780px)" srcset="assets/jean-foto-de-perfil-sem-edicao.jpg">
 				<img class="profile-image" alt="Foto de perfil de jean Janrley" src="assets/jean-foto-de-perfil.png" />
 			</picture>
 		</div>
-
 		<div class="about-me-informations">
 			<h1 class="title hight-title">Sobre mim</h1>
 			<p>
 				Olá, seja bem-vindo! Meu nome é Jean Janrley, tenho 23 anos, moro em Camaçari – BA e
 				curso Téc. em desenvolvimento de sistemas no Senai.<br /><br />
-				Tenho dois anos de experiencia como desenvolvedor Front End e Mobile, mas sou amante de computação desde
+				Tenho dois anos de experiencia como desenvolvedor Front End e Mobile, sou amante da computação desde
 				os 12 anos de idade, e desde então venho estudando sobre o assunto,
-				buscando sempre me especializar na programação, tendo como principal objetivo me tornar um desenvolvedor
-				Full Stack no futuro.
+				buscando sempre me especializar na programação e em todo o universo relacionado.
 			</p>
 
 			<a class="hire-me"
@@ -72,29 +70,30 @@
 				Entrar em contato
 			</a>
 		</div>
-	</section>
-	<section id="second-section">
-		<div class="skills-container">
-			<div class="skills-box">
-				<h1 class="title hight-title">Habilidades</h1>
-				<p class="legend">Essas são as principais tecnologias que estou estudando</p>
-				<div class="dev-icons-area">
-					<img alt="Icone do HTML" class="dev-icon" src="assets/html-icon.png" />
-					<img alt="Icone do Css" class="dev-icon" src="assets/css-icon.png" />
-					<img alt="Icone do Javascript" class="dev-icon" src="assets/js-icon.png" />
-					<img alt="Icone do React" class="dev-icon" src="assets/react-icon.png" />
-					<img alt="Icone do Sass" class="dev-icon" src="assets/sass-icon.png" />
-				</div>
-			</div>
-
-			<div class="illustration-skills">
-				<img class="illustration-skills-image" alt="Foto de perfil de jean Janrley"
-					src="assets/illustration-skills.png" />
+	</div>
+</section>
+<section id="second-section">
+	<div class="container">
+		<div class="skills-box">
+			<h1 class="title hight-title">Habilidades</h1>
+			<p class="legend">Essas são as principais tecnologias que estou estudando</p>
+			<div class="dev-icons-area">
+				<img alt="Icone do HTML" class="dev-icon" src="assets/html-icon.png" />
+				<img alt="Icone do Css" class="dev-icon" src="assets/css-icon.png" />
+				<img alt="Icone do Javascript" class="dev-icon" src="assets/js-icon.png" />
+				<img alt="Icone do React" class="dev-icon" src="assets/react-icon.png" />
+				<img alt="Icone do Sass" class="dev-icon" src="assets/sass-icon.png" />
 			</div>
 		</div>
-	</section>
-	<section id="third-section">
-		<h1 class="title hight-title experiencias">Experiências</h1>
+		<div class="illustration-skills">
+			<img class="illustration-skills-image" alt="Foto de perfil de jean Janrley"
+				src="assets/illustration-skills.png" />
+		</div>
+	</div>
+</section>
+<section id="third-section">
+	<div class="container">
+		<h1 class="hight-title">Experiências</h1>
 		<div class="experiences-container">
 			<div class="experiences-area-buttons">
 				<button class="experience-button" onclick="changeExperience(0)">
@@ -102,7 +101,7 @@
 						Auxiliar administrativo
 					</span>
 					<span class="icon-area-button">
-						<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
+						<img alt="Icone de seta branca para a direita" class="dev-icon" src="assets/arrow-right.svg" />
 					</span>
 				</button>
 				<button class="experience-button" onclick="changeExperience(1)">
@@ -110,7 +109,7 @@
 						Auxiliar administrativo
 					</span>
 					<span class="icon-area-button">
-						<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
+						<img alt="Icone de seta branca para a direita" class="dev-icon" src="assets/arrow-right.svg" />
 					</span>
 				</button>
 				<button class="experience-button" onclick="changeExperience(2)">
@@ -118,7 +117,7 @@
 						Auxiliar de Logística
 					</span>
 					<span class="icon-area-button">
-						<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
+						<img alt="Icone de seta branca para a direita" class="dev-icon" src="assets/arrow-right.svg" />
 					</span>
 				</button>
 				<button class="experience-button" onclick="changeExperience(3)" style="background: #1a1c2b">
@@ -126,7 +125,7 @@
 						Técnico de T.I.
 					</span>
 					<span class="icon-area-button">
-						<img alt="Foto de perfil de jean Janrley" class="dev-icon" src="assets/arrow-right.svg" />
+						<img alt="Icone de seta branca para a direita" class="dev-icon" src="assets/arrow-right.svg" />
 					</span>
 				</button>
 			</div>
@@ -145,66 +144,66 @@
 				</div>
 			</div>
 		</div>
-	</section>
-	<footer id="footer-section">
-		<div class="container container-footer">
-			<div class="footer-div contacts-area">
-				<h1 class="title little-title">Contatos</h1>
-				<div class="contacts-buttons-area">
-					<div class="contact-box" onclick="copyText('jeanjanrley@outlook.com')">
-						<div class="contact-icon" style="background: #006BBD">
-							<img alt="Icone do Gmail" class="dev-icon-media" src="assets/email-icon.png" />
-						</div>
-						<span class="contact-text">
-							jeanjanrley@outlook.com
-						</span>
+	</div>
+</section>
+<footer id="footer-section">
+	<div class="container">
+		<div class="footer-div contacts-area">
+			<h1 class="title little-title">Contatos</h1>
+			<div class="contacts-buttons-area">
+				<div class="contact-box" onclick="copyText('jeanjanrley@outlook.com')">
+					<div class="contact-icon" style="background: #006BBD">
+						<img alt="Icone do Gmail" class="dev-icon-media" src="assets/email-icon.png" />
 					</div>
-					<div class="contact-box" onclick="copyText('71999410178')">
-						<div class="contact-icon" style="background: #32a852">
-							<img alt="Icone do Whastapp" class="dev-icon-media" src="assets/whatsapp-icone.svg" />
-						</div>
-						<span class="contact-text">
-							(71)9.9941-0178
-						</span>
-					</div>
-					<div class="contact-box" onclick="copyText('www.linkedin.com/in/jean-janrley-1b7220156/')">
-						<div class="contact-icon" style="background: #223E8B">
-							<img alt="Icone do linkedin" class="dev-icon-media" src="assets/linkedin-icon.svg" />
-						</div>
-						<span class="contact-text">
-							jean-janrley-1b7220156/
-						</span>
-					</div>
+					<span class="contact-text">
+						jeanjanrley@outlook.com
+					</span>
 				</div>
-			</div>
-
-			<div class="footer-div social-medias">
-				<h1 class="title little-title">Minhas Redes Sociais</h1>
-				<div class="dev-icons-media-area">
-					<a href="https://www.linkedin.com/in/jean-janrley-1b7220156/" target="_blank">
-						<img alt="Icone do linkedin" class="dev-icon-media" src="assets/linkedin-icon.svg" />
-					</a>
-					<a href="https://api.whatsapp.com/send?phone=5571999410178&text=Ol%C3%A1%20Jean!%20Vim%20Atrav%C3%A9s%20do%20seu%20portf%C3%B3lio."
-						target="_blank">
+				<div class="contact-box" onclick="copyText('71999410178')">
+					<div class="contact-icon" style="background: #32a852">
 						<img alt="Icone do Whastapp" class="dev-icon-media" src="assets/whatsapp-icone.svg" />
-					</a>
-
-					<a href="mailto:jeanjanrley@outlook.com" target="_blank">
-						<img alt="Icone do Gmail" class="dev-icon-media" src="assets/gmail-icon.svg" />
-					</a>
+					</div>
+					<span class="contact-text">
+						(71)9.9941-0178
+					</span>
+				</div>
+				<div class="contact-box" onclick="copyText('www.linkedin.com/in/jean-janrley-1b7220156/')">
+					<div class="contact-icon" style="background: #223E8B">
+						<img alt="Icone do linkedin" class="dev-icon-media" src="assets/linkedin-icon.svg" />
+					</div>
+					<span class="contact-text">
+						jean-janrley-1b7220156/
+					</span>
 				</div>
 			</div>
+		</div>
 
-			<div class="footer-div github-profile">
-				<h1 class="title little-title">Mais projetos podem ser encontrados em</h1>
-				<a class="github-section" href="https://github.com/jeanjanrley" target="_blank">
-					<img alt="Icone do Css" class="dev-icon-media" src="assets/github-icon.png" />
-					<p class="title little-title">@<span class="github-name">JeanJanrley</span> / github</p>
+		<div class="footer-div social-medias">
+			<h1 class="title little-title">Minhas Redes Sociais</h1>
+			<div class="dev-icons-media-area">
+				<a href="https://www.linkedin.com/in/jean-janrley-1b7220156/" target="_blank">
+					<img alt="Icone do linkedin" class="dev-icon-media" src="assets/linkedin-icon.svg" />
+				</a>
+				<a href="https://api.whatsapp.com/send?phone=5571999410178&text=Ol%C3%A1%20Jean!%20Vim%20Atrav%C3%A9s%20do%20seu%20portf%C3%B3lio."
+					target="_blank">
+					<img alt="Icone do Whastapp" class="dev-icon-media" src="assets/whatsapp-icone.svg" />
+				</a>
+
+				<a href="mailto:jeanjanrley@outlook.com" target="_blank">
+					<img alt="Icone do Gmail" class="dev-icon-media" src="assets/gmail-icon.svg" />
 				</a>
 			</div>
 		</div>
-	</footer>
-</div>
+
+		<div class="footer-div github-profile">
+			<h1 class="title little-title">Mais projetos podem ser encontrados em</h1>
+			<a class="github-section" href="https://github.com/jeanjanrley" target="_blank">
+				<img alt="Icone do Css" class="dev-icon-media" src="assets/github-icon.png" />
+				<p class="title little-title">@<span class="github-name">JeanJanrley</span> / github</p>
+			</a>
+		</div>
+	</div>
+</footer>
 <script src="config.js"></script>
 </body>
 

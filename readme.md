@@ -1,8 +1,6 @@
 <h1> 🚀 Seja bem vindo ao meu portfólio pessoal!</h1>
 <p>Este projeto foi construído com HTML 5, CSS 3 e Javascript</p>
 
-<img src="asstes/../assets/thumbnail.jpg">
-
 <h2>🔴 Neste projeto priorizei algumas coisas:</h2>
 <ol>
 	<li>Responsividade.</li>
@@ -21,3 +19,6 @@
 
 
 🚩 Página: <a href="https://jeanjanrley.github.io/portfolio/">https://jeanjanrley.github.io/portfolio/</a>
+
+<h1>Screenshots</h1>
+<img src="./assets/screenshot.png" />
